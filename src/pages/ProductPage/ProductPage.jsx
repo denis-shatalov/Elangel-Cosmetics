@@ -1,0 +1,34 @@
+import { useParams } from "react-router-dom";
+import products from "../../../data/product.json";
+import "../../styles/product.css";
+
+export default function ProductPage() {
+  const { id } = useParams();
+  const product = products.find((p) => p.id == id);
+
+  if (!product) {
+    return <div className="product-not-found">Товар не найден</div>;
+  }
+
+  return (
+    <div className="product-container">
+      <div className="product-grid">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="product-image"
+        />
+
+        <div className="product-info">
+          <h1 className="product-name">{product.name}</h1>
+
+          <p className="product-price">{product.price} грн</p>
+
+          <p className="product-desc">{product.description}</p>
+
+          <button className="product-btn">Добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+  );
+}

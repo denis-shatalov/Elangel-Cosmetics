@@ -1,0 +1,20 @@
+:root {
+    --color-bg: #0a0a0a;
+    --color-bg-light: #121212;
+    --color-text: #ffffff;
+    --color-pink: #ff2e8a;
+    --color-pink-light: #ff5baa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}

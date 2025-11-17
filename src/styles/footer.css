@@ -1,0 +1,14 @@
+.footer {
+    background: var(--color-bg-light);
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: center;
+    color: #ccc;
+    border-top: 1px solid rgba(255, 46, 138, 0.4);
+}
+
+.footer h3 {
+    color: var(--color-pink);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
