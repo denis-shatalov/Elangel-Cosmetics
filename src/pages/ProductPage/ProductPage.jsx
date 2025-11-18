@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import products from "../../../data/product.json";
+import products from "../../../data/product";
 import "../../styles/product.css";
 
 export default function ProductPage() {
