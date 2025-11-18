@@ -44,3 +44,78 @@
 .home-btn:hover {
     background: var(--color-pink-light);
 }
+
+/* ----- Форма заявки ----- */
+.home-order {
+    margin-top: 60px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+}
+
+.order-form button {
+    padding: 14px;
+    border-radius: 8px;
+    background: var(--color-pink);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.order-form button:hover {
+    background: var(--color-pink-light);
+}
+
+.form-success {
+    margin-top: 15px;
+    color: var(--color-pink);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ----- Отзывы ----- */
+.home-reviews {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.review-card {
+    margin-top: 25px;
+    background: rgba(255, 46, 138, 0.08);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(255, 46, 138, 0.2);
+}
+
+.review-text {
+    font-size: 18px;
+    color: #eee;
+}
+
+.review-author {
+    margin-top: 10px;
+    color: var(--color-pink);
+    font-weight: bold;
+}
