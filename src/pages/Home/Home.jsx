@@ -4,13 +4,13 @@ import "../../styles/home.css";
 export default function Home() {
   return (
     <div className="home-container">
-      <h1 className="home-title">Добро пожаловать в PINK COSMETICS</h1>
+      <h1 className="home-title">Вітаємо в Elangel Cosmetics</h1>
       <p className="home-subtitle">
-        Натуральная косметика с любовью к вашей коже
+        Професійний догляд за вашим волоссям
       </p>
 
       <Link to="/catalog" className="home-btn">
-        Перейти в каталог
+        До каталогу
       </Link>
     </div>
   );
