@@ -6,6 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="header-content">
         <Link to="/" className="logo">Elangel Cosmetics</Link>
+        <img src="/img/logo.jpg" alt="" width="100px"/>
 
         <nav className="nav">
           <Link to="/">Головна</Link>

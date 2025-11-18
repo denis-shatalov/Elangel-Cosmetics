@@ -25,6 +25,8 @@ export default function ProductPage() {
           <p className="product-price">{product.price} грн</p>
 
           <p className="product-desc">{product.description}</p>
+          
+          <p className="product-desc">{product.vol}</p>
 
           <button className="product-btn">Добавить в корзину</button>
         </div>

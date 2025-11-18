@@ -1,6 +1,21 @@
 .home-container {
     text-align: center;
-    padding: 80px 20px;
+    padding: 130px 20px;
+
+    /* Фон */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* затемнение */
+        url('../../img/main.jpg');
+    /* путь к картинке */
+    background-size: cover;
+    /* чтобы картинка покрывала весь блок */
+    background-position: center;
+    /* центрирование */
+    background-repeat: no-repeat;
+    /* без повторений */
+    color: #fff;
+    /* текст белый */
 }
 
 .home-title {
