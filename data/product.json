@@ -5,7 +5,7 @@
     "price": 700,
     "vol": "1 л",
     "description": "Нежная пенка с ромашкой для ежедневного очищения кожи.",
-    "image": "/public/images/bezsulfaniy.jpg",
+    "image": "/images/bezsulfaniy.jpg",
     "category": "Догляд за волоссям"
   },
   {
@@ -14,7 +14,7 @@
     "price": 800,
     "vol": "1 л",
     "description": "Глубокое увлажнение на 24 часа.",
-    "image": "/public/images/konditioner.jpg",
+    "image": "/images/konditioner.jpg",
     "category": "Догляд за волоссям"
   },
   {
@@ -23,7 +23,7 @@
     "price": 400,
     "vol": "400 мл",
     "description": "Выравнивает тон кожи, придает сияние.",
-    "image": "/public/images/bezsulfaniy.jpg",
+    "image": "/images/bezsulfaniy.jpg",
     "category": "Догляд за волоссям"
   },
   {
@@ -32,7 +32,7 @@
     "price": 700,
     "vol": "500 г",
     "description": "Для гладкості і блиску волосся",
-    "image": "/public/images/lipmask.jpg",
+    "image": "/images/lipmask.jpg",
     "category": "Догляд за волоссям"
   },
    {
@@ -41,7 +41,7 @@
     "price": 800,
     "vol": "500 г",
     "description": "Для реконструкціі волосяя",
-    "image": "/public/images/lipmask.jpg",
+    "image": "/images/lipmask.jpg",
     "category": "Догляд за волоссям"
   },
    {
@@ -50,7 +50,7 @@
     "price": 600,
     "vol": "30 мл",
     "description": "Парфумована олія для волосся",
-    "image": "/public/images/lipmask.jpg",
+    "image": "/images/lipmask.jpg",
     "category": "Догляд за волоссям"
   }
 ]
