@@ -1,0 +1,41 @@
+.about-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #a09f9f;
+}
+
+.about-container h1 {
+    color: #ff2e8a;
+    margin-bottom: 20px;
+}
+
+.about-container h2 {
+    color: #ff2e8a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials a {
+    color: #E4405F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding-left: 20px;
+}
+
+.socials a:hover {
+    color: #ff2e8a;
+}

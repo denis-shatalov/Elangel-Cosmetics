@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <h3>Elangel Cosmetics</h3>
-        <p>© {new Date().getFullYear()} Все права защищены</p>
+        <p>© {new Date().getFullYear()} Усі права захищені</p>
       </div>
     </footer>
   );

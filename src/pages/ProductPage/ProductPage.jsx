@@ -24,11 +24,11 @@ export default function ProductPage() {
 
           <p className="product-price">{product.price} грн</p>
 
-          <p className="product-desc">{product.description}</p>
-          
           <p className="product-desc">{product.vol}</p>
 
-          <button className="product-btn">Добавить в корзину</button>
+          <p className="product-desc">{product.description}</p>
+          
+          <button className="product-btn">Додати в кошик</button>
         </div>
       </div>
     </div>
