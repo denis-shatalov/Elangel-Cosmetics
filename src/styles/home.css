@@ -119,3 +119,33 @@
     color: var(--color-pink);
     font-weight: bold;
 }
+
+.home-carousel {
+    width: 100%;
+    height: auto;
+    /* фиксированный контейнер */
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+.carousel-image {
+    flex: 0 0 400px;
+    height: 750px;
+    margin: 0 10px;
+    border-radius: 15px;
+    object-fit: contain;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.4;
+    transform: scale(0.5);
+}
+
+.carousel-image.active {
+    opacity: 1;
+    transform: scale(1);
+}

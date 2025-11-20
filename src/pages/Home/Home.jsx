@@ -10,12 +10,22 @@ export default function Home() {
     { id: 3, name: "Марія", text: "Маска ліпідна — найкраща, що я пробувала. Результат відчутний!" }
   ];
 
+  const images = [
+  { id: 1, src: "/images/IMG1.jpg", alt: "Косметика 1" },
+  { id: 2, src: "/images/IMG3.jpg", alt: "Косметика 3" },
+  { id: 3, src: "/images/IMG4.jpg", alt: "Косметика 4" },
+  { id: 4, src: "/images/IMG5.jpg", alt: "Косметика 5" },
+  { id: 5, src: "/images/IMG6.jpg", alt: "Косметика 6" },
+  { id: 6, src: "/images/IMG7.jpg", alt: "Косметика 7" }
+];
+
   const BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
 const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
 
   const [current, setCurrent] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,6 +33,14 @@ const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
     }, 4000);
     return () => clearInterval(interval);
   }, []);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage(prev => (prev + 1) % images.length); // правильно для 7 картинок
+  }, 5000);
+  return () => clearInterval(interval);
+}, []);
+
 
   // --- ФОРМА ---
   const [phone, setPhone] = useState("+380");
@@ -131,6 +149,27 @@ const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
           <p className="form-success">Дякуємо! Ми скоро звʼяжемося ❤️</p>
         )}
       </div>
+
+    <div className="home-carousel">
+  <div
+    className="carousel-track"
+    style={{
+      transform: `translateX(-${currentImage * (300 + 20) - (window.innerWidth/2 - 160)}px)`
+    }}
+  >
+    {images.map((img, index) => (
+      <img
+        key={img.id}
+        src={img.src}
+        alt={img.alt}
+        className={`carousel-image ${index === currentImage ? "active" : ""}`}
+      />
+    ))}
+  </div>
+</div>
+
+
+
 
       {/* --- ВІДГУКИ --- */}
       <div className="home-reviews">

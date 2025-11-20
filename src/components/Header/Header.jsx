@@ -11,7 +11,8 @@ export default function Header() {
         <nav className="nav">
           <Link to="/">Головна</Link>
           <Link to="/catalog">Каталог</Link>
-          <Link to="/about">Деталі</Link>
+          <Link to="/details">Деталі</Link>
+          <Link to="/delivery">Доставка та оплата</Link>
         </nav>
       </div>
     </header>

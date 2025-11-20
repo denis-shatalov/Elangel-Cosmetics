@@ -5,8 +5,7 @@
     "price": 700,
     "vol": "1 л",
     "description": "Нежная пенка с ромашкой для ежедневного очищения кожи.",
-    "image": "/images/bezsulfaniy.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/shampoo.jpg"
   },
   {
     "id": 2,
@@ -14,8 +13,7 @@
     "price": 800,
     "vol": "1 л",
     "description": "Глубокое увлажнение на 24 часа.",
-    "image": "/images/konditioner.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/konditioner.jpg"
   },
   {
     "id": 3,
@@ -23,8 +21,7 @@
     "price": 400,
     "vol": "400 мл",
     "description": "Выравнивает тон кожи, придает сияние.",
-    "image": "/images/bezsulfaniy.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/bezsulfatniy.jpg"
   },
   {
     "id": 4,
@@ -32,8 +29,7 @@
     "price": 700,
     "vol": "500 г",
     "description": "Для гладкості і блиску волосся",
-    "image": "/images/lipmask.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/maska_dlya-blusky.jpg"
   },
    {
     "id": 5,
@@ -41,8 +37,7 @@
     "price": 800,
     "vol": "500 г",
     "description": "Для реконструкціі волосяя",
-    "image": "/images/lipmask.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/maska-botox.jpg"
   },
    {
     "id": 6,
@@ -50,7 +45,54 @@
     "price": 600,
     "vol": "30 мл",
     "description": "Парфумована олія для волосся",
-    "image": "/images/lipmask.jpg",
-    "category": "Догляд за волоссям"
+    "image": "/images/parfumovana_oliya.jpg"
+  },
+   {
+    "id": 7,
+    "name": "Парфумований спрей-блиск для волосся",
+    "price": 600,
+    "vol": "100 мл",
+    "description": "Парфумована олія для волосся",
+    "image": "/images/sprey-blisk.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Шампунь для ослабленного, тонкого, схильного до випадіння волосся",
+    "price": 400,
+    "vol": "300 мл",
+    "description": "Шампунь ",
+    "image": "/images/shampoo_oslab.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Бальзам для ослабленного, тонкого, схильного до випадіння волосся",
+    "price": 450,
+    "vol": "300 мл",
+    "description": "Бальзам для ослабленного, тонкого, схильного до випадіння волосся",
+    "image": "/images/balzam-dlya-oslab.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Сироватка для стимуляціі росту волосся",
+    "price": 750,
+    "vol": "100 мл",
+    "description": "Сироватка для стимуляціі росту волосся",
+    "image": "/images/sirovatka.JPG"
+  },
+   {
+    "id": 11,
+    "name": "Спрей для прикореневого об'ему",
+    "price": 300,
+    "vol": "100 мл",
+    "description": "Сироватка для стимуляціі росту волосся",
+    "image": "/images/sprey_dlya-obemu.jpg"
+  },
+   {
+    "id": 12,
+    "name": "Зволожуюча емульсія для реконструкціі волосся",
+    "price": 350,
+    "vol": "100 мл",
+    "description": "Сироватка для стимуляціі росту волосся",
+    "image": "/images/emulsiya.jpg"
   }
 ]
