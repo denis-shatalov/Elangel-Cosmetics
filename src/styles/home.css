@@ -120,32 +120,15 @@
     font-weight: bold;
 }
 
-.home-carousel {
-    width: 100%;
-    height: auto;
-    /* фиксированный контейнер */
-    overflow: hidden;
-    margin: 50px auto;
+.home-carousel .slick-slide img {
+    transition: all 0.5s ease;
+    filter: blur(3px) brightness(0.6);
+    transform: scale(0.8);
+    opacity: 0.5;
 }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    align-items: center;
-}
-
-.carousel-image {
-    flex: 0 0 400px;
-    height: 750px;
-    margin: 0 10px;
-    border-radius: 15px;
-    object-fit: contain;
-    transition: transform 0.5s, opacity 0.5s;
-    opacity: 0.4;
-    transform: scale(0.5);
-}
-
-.carousel-image.active {
-    opacity: 1;
+.home-carousel .slick-center img {
+    filter: blur(0) brightness(1);
     transform: scale(1);
+    opacity: 1;
 }
