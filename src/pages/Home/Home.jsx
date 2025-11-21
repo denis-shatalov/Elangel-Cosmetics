@@ -19,7 +19,9 @@ export default function Home() {
     { id: 3, src: "/images/IMG4.jpg", alt: "Косметика 4" },
     { id: 4, src: "/images/IMG5.jpg", alt: "Косметика 5" },
     { id: 5, src: "/images/IMG6.jpg", alt: "Косметика 6" },
-    { id: 6, src: "/images/IMG7.jpg", alt: "Косметика 7" }
+    { id: 6, src: "/images/IMG7.jpg", alt: "Косметика 7" },
+    { id: 7, src: "/images/IMG8.jpg", alt: "Косметика 6" },
+    { id: 8, src: "/images/IMG9.jpg", alt: "Косметика 6" },
   ];
 
   const BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
@@ -82,7 +84,7 @@ export default function Home() {
     centerMode: true,
     infinite: true,
     centerPadding: "0px",
-    slidesToShow: 3,       // три картинки видны
+    slidesToShow: 5,       // три картинки видны
     speed: 500,
     autoplay: true,
     autoplaySpeed: 3000,   // 4 секунды
@@ -115,7 +117,7 @@ export default function Home() {
         <Slider {...settings}>
           {images.map(img => (
             <div key={img.id}>
-              <img src={img.src} alt={img.alt} style={{ width: "100%", borderRadius: "15px", height: "500px", objectFit: "contain" }} />
+              <img src={img.src} alt={img.alt}  />
             </div>
           ))}
         </Slider>
