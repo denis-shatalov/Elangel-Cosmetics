@@ -91,6 +91,7 @@ export default function Home() {
     cssEase: "ease-in-out",
     arrows: false,
     dots: false,
+    
   };
 
   return (
@@ -109,7 +110,7 @@ export default function Home() {
           <textarea placeholder="Коментар (необов'язково)" value={comment} onChange={(e) => setComment(e.target.value)} />
           <button type="submit">Відправити</button>
         </form>
-        {success && <p className="form-success">Дякуємо! Ми скоро звʼяжемося ❤️</p>}
+        {success && <p className="form-success">Дякуємо! Ми з вами звʼяжемося найближчим часом ❤️</p>}
       </div>
 
       {/* --- КАРУСЕЛЬ --- */}

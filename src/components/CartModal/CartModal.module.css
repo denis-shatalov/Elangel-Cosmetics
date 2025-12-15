@@ -1,0 +1,64 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-pink);
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size:large;
+    color: rgb(49, 48, 48);
+}
+
+.remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-pink);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.send:hover {
+    background-color: #da176c;
+}

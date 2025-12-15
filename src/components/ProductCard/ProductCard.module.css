@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--color-bg-light);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 46, 138, 0.4);
+}
+
+.link {
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.name {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.price {
+    margin-top: auto;
+    color: var(--color-pink);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.addBtn {
+    margin-top: 10px;
+    background: var(--color-pink);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}

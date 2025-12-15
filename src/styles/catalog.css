@@ -22,6 +22,9 @@
   padding: 15px;
   border-radius: 10px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .catalog-card:hover {
@@ -43,7 +46,7 @@
 }
 
 .catalog-price {
-  margin-top: 6px;
+ margin-top: auto;
   color: var(--color-pink);
   font-size: 18px;
   font-weight: bold;
