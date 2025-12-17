@@ -2,11 +2,13 @@ import { useParams } from "react-router-dom";
 import products from "../../../data/product.json";
 import "../../styles/product.css";
 import { useState } from "react";
+import { useCart } from "../../context/CartContext";
 
 export default function ProductPage() {
   const { id } = useParams();
   const product = products.find((p) => p.id == id);
   const [imgLoaded, setImgLoaded] = useState(false);
+  const { addToCart } = useCart();
 
   if (!product) {
     return <div className="product-not-found">Товар не найден</div>;
@@ -34,7 +36,12 @@ export default function ProductPage() {
           <p className="product-desc">{product.vol}</p>
           <p className="product-desc">{product.description}</p>
 
-          <button className="product-btn">Додати в кошик</button>
+          <button
+            className="product-btn"
+            onClick={() => addToCart(product)}
+          >
+            🛒 Додати до заявки
+          </button>
         </div>
       </div>
     </div>

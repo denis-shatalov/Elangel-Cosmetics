@@ -13,16 +13,27 @@ export function CartProvider({ children }) {
   const addToCart = (product) => {
     setCart(prev => {
       const exists = prev.find(p => p.id === product.id);
-      if (exists) return prev.map(p => p.id === product.id ? { ...p, qty: p.qty + 1 } : p);
+      if (exists) {
+        return prev.map(p =>
+          p.id === product.id ? { ...p, qty: p.qty + 1 } : p
+        );
+      }
       return [...prev, { ...product, qty: 1 }];
     });
   };
 
   const removeFromCart = (id) => setCart(prev => prev.filter(p => p.id !== id));
+
   const clearCart = () => setCart([]);
 
+  // ✅ Новая функция для изменения количества товаров
+  const updateQty = (id, qty) => {
+    if (qty < 1) return;
+    setCart(prev => prev.map(p => (p.id === id ? { ...p, qty } : p)));
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, updateQty }}>
       {children}
     </CartContext.Provider>
   );
