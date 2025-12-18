@@ -158,4 +158,9 @@
         display: flex;
         /* показываем бургер + корзину */
     }
+
+        .headerContent img {
+            margin-left: 10px;
+            margin-right: auto;
+        }
 }

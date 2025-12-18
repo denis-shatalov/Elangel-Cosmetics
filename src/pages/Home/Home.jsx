@@ -105,7 +105,12 @@ export default function Home() {
       <div className="home-order">
         <h2 className="section-title">Залишити заявку</h2>
         <form className="order-form" onSubmit={handleSubmit}>
-          <input type="tel" placeholder="Ваш номер телефону" value={phone} onChange={handlePhoneChange} required className={!isValid ? "input-error" : ""}/>
+          <input type="tel"
+            placeholder="Ваш номер телефону"
+            value={phone}
+            onChange={handlePhoneChange} required
+            className={!isValid ? "input-error" : ""}
+          />
           {!isValid && <p className="error-text">Введіть коректний номер телефону (приклад: +380971234567)</p>}
           <textarea placeholder="Коментар (необов'язково)" value={comment} onChange={(e) => setComment(e.target.value)} />
           <button type="submit">Відправити</button>

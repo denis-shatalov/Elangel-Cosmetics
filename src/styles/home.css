@@ -45,11 +45,13 @@
 
 /* ---- АНИМАЦИИ ДЛЯ HOME-CONTAINER ---- */
 .home-title {
+    margin-top: 60px;
     font-size: 40px;
     font-weight: bold;
     color: var(--color-pink);
     opacity: 0;
     animation: slideInRight 1s ease-out 0.2s forwards;
+    margin-bottom: 60px;
 }
 
 .home-subtitle {
@@ -185,4 +187,9 @@
         height: 250px;
         
     }
+
+        .home-order {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 }

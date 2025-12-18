@@ -4,7 +4,11 @@ import { lazy, Suspense } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PageLoader from "./components/PageLoader/PageLoader";
-import { CartProvider } from "./context/CartContext"; // <-- импорт CartProvider
+import { CartProvider } from "./context/CartContext";
+
+// 👉 ТОСТЫ
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // 👉 ЛЕНИВЫЕ СТРАНИЦЫ
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -15,7 +19,7 @@ const DeliveryPage = lazy(() => import("./pages/Delivery/DeliveryPage"));
 
 export default function App() {
   return (
-    <CartProvider> {/* <-- оборачиваем всё в CartProvider */}
+    <CartProvider>
       <BrowserRouter>
         <Header />
 
@@ -32,6 +36,18 @@ export default function App() {
         </main>
 
         <Footer />
+
+        {/* 🔔 Контейнер для тостов */}
+        <ToastContainer
+          position="top-right"
+          autoClose={2500}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnHover
+          draggable
+          theme="light"
+        />
       </BrowserRouter>
     </CartProvider>
   );

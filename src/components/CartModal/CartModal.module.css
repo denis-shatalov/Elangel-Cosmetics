@@ -21,8 +21,10 @@
     position: relative;
 }
 
-.modal h2,p {
+.modal h2,
+.modal p {
     color: var(--color-pink);
+    margin-bottom: 15px;
 }
 
 .closeBtn {
@@ -33,6 +35,11 @@
     background: none;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s, transform 0.2s ease;
+}
+
+.closeBtn:hover {
+    scale: 1.2;
 }
 
 .cartList {
@@ -44,22 +51,21 @@
 .cartItem {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    gap: 10px;
+    gap: 12px;
+    padding: 6px 0;
 }
 
 .name {
-    color: #888;
     flex: 2;
+    color: #888;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.price{
-    margin-left: auto;
-    margin-right: auto;
+.price {
+    flex: 0 0 80px;
+    text-align: right;
     color: grey;
 }
 
@@ -72,10 +78,10 @@
 }
 
 .sum {
-    color: grey;
-    flex: 1;
+    flex: 0 0 90px;
     text-align: right;
     font-weight: bold;
+    color: grey;
 }
 
 .remove {
@@ -84,11 +90,16 @@
     font-size: 20px;
     cursor: pointer;
     color: red;
+    transition: 0.3s, transform 0.2s ease;
+}
+
+.remove:hover {
+    scale: 1.2;
 }
 
 .total {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: right;
     color: grey;
@@ -96,27 +107,62 @@
 
 .clearBtn {
     margin-top: 10px;
-    background: var(--color-pink);
-    color: #fff;
-    border: none;
-    padding: 8px;
-    width: 50%;
+    margin-left: auto;
+    /* 👉 прижать вправо */
+    display: block;
+
+    background: transparent;
+    color: var(--color-pink);
+    border: 1px solid var(--color-pink);
+
+    padding: 4px 10px;
+    /* 👉 меньше */
+    width: auto;
+    font-size: 12px;
+
     border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.clearBtn:hover {
+    background: var(--color-pink);
+    color: #fff;
 }
 
 .form {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
 }
 
 .form input {
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
 }
+
+.form input:focus {
+    outline: none;
+    border-color: var(--color-pink);
+}
+
+
 
 .submitBtn {
     background: var(--color-pink);
@@ -126,9 +172,98 @@
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.3s, transform 0.2s ease;
 }
+
+.submitBtn:hover {
+        background: var(--color-pink-light);
+    }
 
 .success {
     color: green;
     margin-top: 5px;
+}
+
+.qtyControls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.qtyBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.qtyBtn:hover {
+    background: var(--color-pink);
+    color: #fff;
+    border-color: var(--color-pink);
+}
+
+.qtyInput {
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.rightControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Базовые стили оставляем как есть */
+@media (max-width: 768px) {
+    .modal {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cartItem {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        /* вертикальный промежуток между элементами внутри позиции */
+        margin-bottom: 15px;
+        /* отступ между позициями */
+        position: relative;
+    }
+
+    .rightControls {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .price{
+        transform: translateY(+18%);
+    }
+
+    .qtyControls {
+        gap: 4px;
+    }
+
+    .sum {
+        text-align: right;
+    }
+
+    .clearBtn,
+    .submitBtn {
+        width: 100%;
+        padding: 8px;
+    }
 }
